@@ -19,19 +19,18 @@ jobs:
 
     - name: Install Dependencies and Build
       run: |
-        npm i yarn -g
-        yarn
-        yarn run build
+        npm ci
+        npm run build
       env:
         CI: true
 
     - name: Test with Coverage Output
       run: |
-        yarn run test --silent --coverage --json
+        npm run test --silent --coverage --json
 
-    - name: Send Coverage Reports to Codecov
-      uses: codecov/codecov-action@v1.0.5
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-        file: ./coverage/*.json
+    # - name: Send Coverage Reports to Codecov
+    #   uses: codecov/codecov-action@v1.0.5
+    #   with:
+    #     token: ${{ secrets.CODECOV_TOKEN }}
+    #     file: ./coverage/*.json
 
