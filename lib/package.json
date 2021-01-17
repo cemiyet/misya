@@ -1,0 +1,22 @@
+{
+  "name": "misya",
+  "version": "0.1.0",
+  "description": "🧩 Building blocks for building elegant ui.",
+  "homepage": "https://github.com/cemiyet/misya",
+  "author": "Nuri Uzunoğlu",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cemiyet/misya"
+  },
+  "bugs": {
+    "url": "https://github.com/cemiyet/misya/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^11.0.9",
+    "@angular/core": "^11.0.9"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
