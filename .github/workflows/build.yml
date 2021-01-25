@@ -26,11 +26,10 @@ jobs:
 
     - name: Test with Coverage Output
       run: |
-        npm run test --silent --coverage --json
+        npm run test --silent --coverage --json --no-watch --browsers=ChromeHeadlessCI
 
     # - name: Send Coverage Reports to Codecov
     #   uses: codecov/codecov-action@v1.0.5
     #   with:
     #     token: ${{ secrets.CODECOV_TOKEN }}
     #     file: ./coverage/*.json
-
